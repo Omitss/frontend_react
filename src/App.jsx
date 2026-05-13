@@ -12,24 +12,19 @@ const scores = [ // table구조 == JSON구조
   {이름 : "Sue", 국어: 90, 영어: 90, 수학:80, 과학 : 90}
 ]
 
-// JS문법 테이블구조를 표현하는 방법
-// {scores[0]['수학']} OR {scores[0].수학}
-// table구조 = list, list접근하는 법 => 숫자 ==> scores[0]으로 접근
-// object접근 하는법 => 키 값 ==> ['수학'] or .수학 으로 접근
+const sources = [0,1,2,3]
+tmp = []
+for(let item of sources){
+  tmp.push(item*2)
+}
 
-//구 시대적 맵핑 작업 -> 지금은 사용 안함, map()함수로 대체 하면됨
-// let number = [0,1,2,3]
-// let newScores = []
-// for(let i =0; i<number.length; i++){
-//   newScores.push(number[i]*2)
-// }
+sources.map(item=>(item*2))
 
-// 지금은 map사용 아래 함수 참고!!
 function App() {
 
   return ( 
    
-    <table> {/* React JSX에서 {} 는JavaScript 코드를 넣는 영역입니다. */}
+    <table>
      
       <tr>
         <th>이름</th>
