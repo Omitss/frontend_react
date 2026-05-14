@@ -1,13 +1,6 @@
 import React from 'react'
 
-const scores = [ 
-  {이름 : "John", 국어: 90, 영어: 90, 수학:80, 과학 : 90}, 
-  {이름 : "peter", 국어: 90, 영어: 90, 수학:80, 과학 : 90},
-  {이름 : "susan", 국어: 90, 영어: 90, 수학:80, 과학 : 90},
-  {이름 : "Sue", 국어: 90, 영어: 90, 수학:80, 과학 : 90}
-]
-
-function ScoresTable() {
+function ScoresTable({scores}) { // {scores}의미 : scores의 키값과 vlaue값이 같음
   return (
     <div>
       <table>
@@ -44,5 +37,3 @@ function ScoresTable() {
 }
 
 export default ScoresTable
-
-rs
